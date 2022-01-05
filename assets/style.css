@@ -5,7 +5,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     align-items: center;
     height: 10vh;
@@ -26,12 +26,20 @@ body {
     text-decoration: none;
 }
 
-.lang {
-    color: white;
+.login {
+    display: flex;
+    justify-self: end;
+    justify-content: center;
 }
 
+.lang {
+    color: white;
+    justify-content: center;
+}
+
+
 .login-button {
-    height: 50%;
+    height: 50px;
     width: 102px;
     border-radius: 6px;
     border: none;
@@ -39,14 +47,12 @@ body {
     color: white;
 }
 
-.main {
-    display: grid;
-}
+
 
 .first-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40%;
+    grid-template-rows: 50%;
 }
 
 .main-photo {
@@ -75,7 +81,7 @@ p {
 .suggestions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 37px 37px;
+    grid-template-rows: 40px 40px;
     gap: 10px;
     grid-column: 2/3;
 }
