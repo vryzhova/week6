@@ -51,7 +51,7 @@ body {
 
 .main-photo {
     grid-column: 1/2;
-    grid-row: 1/3;
+
 }
 
 .main-head {
@@ -78,7 +78,6 @@ p {
     grid-template-rows: 37px 37px;
     gap: 10px;
     grid-column: 2/3;
-    grid-row: 1/3;
 }
 
 .courses {
