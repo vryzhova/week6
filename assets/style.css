@@ -1,0 +1,89 @@
+body {
+    background-color: #171836;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    margin: 20px;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.lang {
+    color: white;
+}
+
+.login-button {
+    height: 50%;
+    width: 102px;
+    border-radius: 6px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.main {
+    display: grid;
+}
+
+.first-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40%;
+}
+
+.main-photo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.main-head {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input {
+    height: 68px;
+    width: 506px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #1F2143;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.suggestions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 37px 37px;
+    gap: 10px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.courses {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
