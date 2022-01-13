@@ -4,11 +4,104 @@ body {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 425px) {
+    .menu {
+        display: none;
+    }
+
+    .main-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+
+    }
+
+    .main-photo {
+        display: none;
+
+    }
+
+    .info {
+        grid-column: 1/2;
+        background-image: url(/assets/images/student\ hero\ section.png);
+    }
+
+    .main-head {
+        color: rgba(255, 255, 255);
+        margin-top: 100px;
+        font-size: 56px;
+    }
+
+    .suggestions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40px;
+        gap: 10px;
+
+    }
+
+    .login {
+        grid-column: 3/4;
+        display: flex;
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column: 2/3;
+        justify-self: start;
+        gap: 44px;
+    }
+
+    .main-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50%;
+        width: 100%;
+
+    }
+
+    .main-photo {
+        grid-column: 1/2;
+        width: 100%;
+
+    }
+
+    .info {
+        grid-column: 2/3;
+    }
+
+    .suggestions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px;
+        gap: 10px;
+
+    }
+
+    .main-head {
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 100px;
+        font-size: 56px;
+    }
+
+    .login {
+        grid-column: 3/4;
+        display: flex;
+        justify-self: end;
+    }
+}
+
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 20% 60% 20%;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 10vh;
 }
 
@@ -18,13 +111,7 @@ body {
 
 }
 
-.menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column: 2/5;
-    justify-self: start;
-    gap: 44px;
-}
+
 
 .menu-a {
     color: rgba(255, 255, 255, 0.8);
@@ -32,9 +119,9 @@ body {
 }
 
 .login {
-    grid-column: 5/6;
+    grid-column: 3/4;
     display: flex;
-    justify-self: center;
+    justify-self: end;
 }
 
 .lang {
@@ -50,31 +137,6 @@ body {
     border: none;
     background-color: red;
     color: white;
-}
-
-
-
-.main-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50%;
-    width: 100%;
-
-}
-
-.main-photo {
-    grid-column: 1/2;
-
-}
-
-.info {
-    grid-column: 2/3;
-}
-
-.main-head {
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 100px;
-    font-size: 56px;
 }
 
 input {
@@ -93,13 +155,6 @@ p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.suggestions {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 40px;
-    gap: 10px;
-
-}
 
 .courses {
     border: 1px solid rgba(255, 255, 255, 0.4);
